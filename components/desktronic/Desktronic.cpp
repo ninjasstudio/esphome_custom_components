@@ -75,7 +75,7 @@ static int segment_to_number(const uint8_t segment)
     case SEGMENT_9:
         return 9;
     default:
-        ESP_LOGW(TAG, "unknown digit: %02f", segment & 0x7f);
+        ESP_LOGW(TAG, "unknown digit: %02d", segment & 0x7f);
     }
 
     return -1;
